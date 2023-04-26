@@ -1,0 +1,135 @@
+@import '../../styles/config';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  overflow: hidden;
+
+  position: relative;
+
+  border: 1px solid lighten($color-grey, 50%);
+  border-radius: $default-border-radius;
+
+  -webkit-box-shadow: 0px 0px 15px 5px rgba($color-black-900, 0.15);
+  -moz-box-shadow: 0px 0px 15px 5px rgba($color-black-900, 0.15);
+  box-shadow: 0px 0px 15px 5px rgba($color-black-900, 0.15);
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+  }
+
+  .label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color-white;
+
+    background-color: $color-orange;
+    padding: $label-padding;
+    border-radius: $default-border-radius;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $card-gap;
+
+    padding: $card-padding;
+
+    font-size: 0.9rem;
+    font-weight: 400;
+
+    .bunType {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: $card-gap;
+
+      width: 100%;
+
+      background-color: $color-light-grey;
+      padding: 10px 25px;
+      border-radius: $default-border-radius;
+
+      .active {
+        background-color: $color-white;
+        border-radius: $default-border-radius;
+      }
+
+      span {
+        padding: 5px 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-white;
+
+          border-radius: $default-border-radius;
+        }
+      }
+    }
+
+    .cardBottom {
+      min-width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-top: $card-gap;
+
+      .price {
+        font-size: 1.4rem;
+        font-weight: 700;
+
+        margin: 0 auto;
+      }
+
+      .cartButton {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $color-white;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $button-gap;
+
+        padding: $button-padding;
+
+        background-color: $color-red;
+        border-radius: $default-border-radius;
+
+        transition: opacity $default-opacity;
+
+        &:hover {
+          opacity: $default-opacity;
+        }
+
+        .addedCount {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          font-size: 0.9rem;
+          font-weight: 500;
+          color: $color-red;
+
+          width: 24px;
+          height: 24px;
+
+          background-color: $color-white;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}

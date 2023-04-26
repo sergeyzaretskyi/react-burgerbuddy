@@ -1,0 +1,75 @@
+@import '../../styles/config';
+
+.sortBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  .sortButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $button-gap;
+
+    background-color: $color-light-grey;
+    border-radius: $default-border-radius;
+    padding: $button-padding;
+
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color-black-700;
+
+    transition: background-color $default-transition;
+
+    &:hover {
+      background-color: $color-grey;
+    }
+
+    img {
+      min-width: 24px;
+      min-height: 24px;
+
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .sortList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 150px;
+
+    z-index: 1000;
+
+    position: absolute;
+    overflow: hidden;
+
+    top: 50px;
+    right: 0;
+
+    background-color: $color-light-grey;
+    border-radius: $default-border-radius;
+
+    -webkit-box-shadow: 0px 0px 15px 5px rgba($color-black-900, 0.15);
+    -moz-box-shadow: 0px 0px 15px 5px rgba($color-black-900, 0.15);
+    box-shadow: 0px 0px 15px 5px rgba($color-black-900, 0.15);
+
+    .sortItem {
+      padding: $button-padding;
+      width: 100%;
+
+      cursor: pointer;
+      transition: background-color $default-transition;
+
+      &:hover {
+        background-color: $color-grey;
+      }
+    }
+  }
+}

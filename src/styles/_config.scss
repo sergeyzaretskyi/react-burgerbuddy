@@ -1,0 +1,37 @@
+// Color variables
+
+$color-pink: #ffeadf;
+$color-red: #e4292a;
+$color-orange: #fe611d;
+$color-yellow: #ffb90f;
+$color-white: #ffffff;
+$color-black-900: #000000;
+$color-black-700: #2e2827;
+$color-grey: #a9a9a9;
+$color-light-grey: lighten($color-grey, 25%);
+
+$default-opacity: 0.7;
+
+// Borders
+
+$default-border-radius: 15px;
+
+// Spacing variables
+
+$container-padding: 15px;
+$section-padding: 30px;
+$button-padding: 10px 20px;
+$card-padding: 10px;
+$label-padding: 0 10px;
+
+$default-gap: 35px;
+$button-gap: 10px;
+$card-gap: 10px;
+
+$default-margin: 30px;
+
+// Transitions
+
+$default-transition: 0.2s ease-in-out;
+
+// Mixins

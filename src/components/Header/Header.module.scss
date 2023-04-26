@@ -1,0 +1,129 @@
+@import '../../styles/config';
+
+.header {
+  background-color: $color-pink;
+  padding: $section-padding 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .brand {
+      font-size: 1.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity $default-transition;
+
+      &:hover {
+        opacity: $default-opacity;
+      }
+
+      a {
+        color: $color-black-900;
+      }
+    }
+
+    .navList {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: $default-gap;
+
+      .navItem {
+        cursor: pointer;
+        transition: opacity $default-transition;
+
+        a {
+          color: $color-black-700;
+          font-weight: 500;
+        }
+
+        &:hover {
+          opacity: $default-opacity;
+        }
+      }
+    }
+
+    .userSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: $default-gap;
+
+      .cart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $button-gap;
+
+        background-color: $color-orange;
+        border-radius: $default-border-radius;
+        padding: $button-padding;
+
+        color: $color-white;
+        font-size: 0.9rem;
+        font-weight: 500;
+
+        cursor: pointer;
+        transition: opacity $default-transition;
+
+        &:hover {
+          opacity: $default-opacity;
+        }
+
+        &:before {
+          content: '';
+          border: 1px solid $color-pink;
+          align-self: stretch;
+        }
+
+        img {
+          min-width: 24px;
+          min-height: 24px;
+
+          width: 24px;
+          height: 24px;
+        }
+
+        .cartTotal {
+          order: -1;
+        }
+
+        .cartItems {
+          .cartCount {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+
+            background-color: $color-pink;
+            height: 20px;
+            width: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: $color-orange;
+          }
+        }
+      }
+
+      .user {
+        align-self: center;
+
+        cursor: pointer;
+        transition: opacity $default-transition;
+
+        &:hover {
+          opacity: $default-opacity;
+        }
+
+        img {
+          min-width: 36px;
+          min-height: 36px;
+
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+  }
+}
