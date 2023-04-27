@@ -12,6 +12,7 @@ export const Menu = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // FOR TESTING ONLY --> await new Promise((resolve) => setTimeout(resolve, 10000));
         const res = await fetch('/burgers.json');
         const data = await res.json();
 
@@ -29,7 +30,14 @@ export const Menu = () => {
 
   return (
     <main>
-      <Categories {...{ activeCategory, setActiveCategory, menuCategories }} />
+      <Categories
+        {...{
+          activeCategory,
+          setActiveCategory,
+          menuCategories,
+          isDataLoading,
+        }}
+      />
 
       <BurgersSection
         {...{ activeCategory, menuCategories, menuObject, isDataLoading }}
