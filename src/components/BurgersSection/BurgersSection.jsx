@@ -2,6 +2,8 @@ import { Card } from '../Card/Card';
 import { Sort } from '../Sort/Sort';
 import { Container } from '../UI/Container/Container';
 import { Heading } from '../UI/Heading/Heading';
+import { GridSkeleton } from '../UI/Skeletons/GridSkeleton';
+import { HeadingSkeleton } from '../UI/Skeletons/HeadingSkeleton';
 import styles from './BurgersSection.module.scss';
 
 export const BurgersSection = ({
@@ -36,16 +38,24 @@ export const BurgersSection = ({
       <Container>
         <div className={styles.wrapper}>
           <div className={styles.burgersTop}>
-            <Heading
-              tag="h2"
-              text={`${menuCategories[activeCategory]} Burgers`}
-            />
+            {isDataLoading ? (
+              <HeadingSkeleton />
+            ) : (
+              <Heading
+                tag="h2"
+                text={`${menuCategories[activeCategory]} Burgers`}
+              />
+            )}
 
             <Sort />
           </div>
 
           <div className={styles.burgersGrid}>
-            {!isDataLoading && renderBurgers()}
+            {isDataLoading
+              ? [...new Array(6)].map((_, index) => (
+                  <GridSkeleton key={index} />
+                ))
+              : renderBurgers()}
           </div>
         </div>
       </Container>
