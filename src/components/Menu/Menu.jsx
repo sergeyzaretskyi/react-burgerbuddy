@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './Menu.module.scss';
 import { Categories } from '../Categories/Categories';
-import { BurgersSection } from '../BurgersSection/BurgersSection';
+import { BurgersSection } from '../Burgers/Burgers';
 
 export const Menu = () => {
   const [activeCategory, setActiveCategory] = useState(0);
