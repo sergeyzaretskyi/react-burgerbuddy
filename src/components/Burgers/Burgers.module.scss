@@ -1,0 +1,20 @@
+@import '../../styles/config';
+
+.burgersTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $default-gap;
+}
+
+.burgersGrid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: $default-gap;
+
+  flex-wrap: wrap;
+
+  margin-top: $default-margin;
+}
