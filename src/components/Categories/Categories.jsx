@@ -1,7 +1,8 @@
 import { Container } from '../UI/Container/Container';
 import { Heading } from '../UI/Heading/Heading';
+import { Section } from '../UI/Section/Section';
 import { CategoriesSkeleton } from '../UI/Skeletons/CategoriesSkeleton';
-import styles from './Categories.module.css';
+import styles from './Categories.module.scss';
 
 export const Categories = ({
   activeCategory,
@@ -10,7 +11,7 @@ export const Categories = ({
   isDataLoading,
 }) => {
   return (
-    <section className={styles.categories}>
+    <Section>
       <Container>
         <Heading tag="h1" text="Our Menu" />
 
@@ -40,6 +41,6 @@ export const Categories = ({
           )}
         </ul>
       </Container>
-    </section>
+    </Section>
   );
 };
