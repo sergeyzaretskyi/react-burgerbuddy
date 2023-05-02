@@ -8,7 +8,7 @@ import { HeadingSkeleton } from '../UI/Skeletons/HeadingSkeleton';
 import { Wrapper } from '../UI/Wrapper/Wrapper';
 import styles from './Burgers.module.scss';
 
-export const BurgersSection = ({
+export const Burgers = ({
   activeCategory,
   menuCategories,
   menuObject,
