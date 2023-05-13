@@ -7,9 +7,9 @@ export const Header = () => {
     <header className={styles.header}>
       <Container>
         <div className={styles.wrapper}>
-          <p className={styles.brand}>
+          <h1 className={styles.brand}>
             <Link to="/">🍔 BurgerBuddy</Link>
-          </p>
+          </h1>
 
           <nav className={styles.nav}>
             <ul className={styles.navList}>
