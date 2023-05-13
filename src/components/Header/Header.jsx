@@ -11,28 +11,28 @@ export const Header = () => {
             <Link to="/">🍔 BurgerBuddy</Link>
           </h1>
 
-          <nav className={styles.nav}>
-            <ul className={styles.navList}>
-              <li className={styles.navItem}>
+          <nav>
+            <ul className={styles.list}>
+              <li className={styles.item}>
                 <Link to="/">Home</Link>
               </li>
-              <li className={styles.navItem}>
+              <li className={styles.item}>
                 <a href="#Menu">Menu</a>
               </li>
-              <li className={styles.navItem}>
+              <li className={styles.item}>
                 <Link to="/service">Service</Link>
               </li>
             </ul>
           </nav>
 
-          <div className={styles.userSection}>
+          <div className={styles.right}>
             <Link to="/cart">
               <button className={styles.cart}>
-                <p className={styles.cartTotal}>$100.49</p>
+                <p className={styles.total}>$100.49</p>
 
-                <p className={styles.cartItems}>
+                <p className={styles.items}>
                   <img src="/img/icons/cart.svg" />{' '}
-                  <span className={styles.cartCount}>3</span>
+                  <span className={styles.count}>3</span>
                 </p>
               </button>
             </Link>

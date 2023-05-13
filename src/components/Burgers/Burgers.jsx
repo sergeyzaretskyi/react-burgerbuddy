@@ -39,7 +39,7 @@ export const Burgers = ({
     <Section>
       <Container>
         <Wrapper>
-          <div className={styles.burgersTop}>
+          <div className={styles.top}>
             {isDataLoading ? (
               <HeadingSkeleton />
             ) : (
@@ -52,7 +52,7 @@ export const Burgers = ({
             <Sort />
           </div>
 
-          <div className={styles.burgersGrid}>
+          <div className={styles.grid}>
             {isDataLoading
               ? [...new Array(6)].map((_, index) => (
                   <GridSkeleton key={index} />

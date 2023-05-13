@@ -1,13 +1,13 @@
 @import '../../styles/config';
 
-.burgersTop {
+.top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: $default-gap;
 }
 
-.burgersGrid {
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);

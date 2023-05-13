@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import styles from './Menu.module.scss';
 import { Categories } from '../Categories/Categories';
 import { Burgers } from '../Burgers/Burgers';
 

@@ -24,13 +24,13 @@
       }
     }
 
-    .navList {
+    .list {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: $default-gap;
 
-      .navItem {
+      .item {
         cursor: pointer;
         transition: opacity $default-transition;
 
@@ -45,7 +45,7 @@
       }
     }
 
-    .userSection {
+    .right {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -86,12 +86,12 @@
           height: 24px;
         }
 
-        .cartTotal {
+        .total {
           order: -1;
         }
 
-        .cartItems {
-          .cartCount {
+        .items {
+          .count {
             display: inline-block;
             font-size: 0.8rem;
             font-weight: 600;

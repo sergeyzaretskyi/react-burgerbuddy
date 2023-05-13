@@ -4,7 +4,7 @@ h1 {
   text-align: center;
 }
 
-.menuCategoriesList {
+.list {
   display: flex;
   gap: $default-gap;
 
@@ -12,7 +12,7 @@ h1 {
 
   overflow: scroll; // ONLY FOR TESTS
 
-  .menuCategoriesItem {
+  .item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

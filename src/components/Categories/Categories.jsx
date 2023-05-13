@@ -15,7 +15,7 @@ export const Categories = ({
       <Container>
         <Heading tag="h1" text="Our Menu" />
 
-        <ul className={styles.menuCategoriesList}>
+        <ul className={styles.list}>
           {isDataLoading ? (
             <CategoriesSkeleton />
           ) : (
@@ -25,9 +25,7 @@ export const Categories = ({
               return (
                 <li
                   key={category}
-                  className={`${styles.menuCategoriesItem} ${
-                    isActive ? styles.active : ''
-                  }`}
+                  className={`${styles.item} ${isActive ? styles.active : ''}`}
                   onClick={() => setActiveCategory(index)}
                 >
                   <img

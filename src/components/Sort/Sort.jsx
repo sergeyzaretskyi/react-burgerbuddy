@@ -13,22 +13,22 @@ export const Sort = () => {
   };
 
   return (
-    <div className={styles.sortBlock}>
+    <div className={styles.sort}>
       <button
         onClick={() => setIsSortOpen(!isSortOpen)}
-        className={styles.sortButton}
+        className={styles.button}
       >
         <img src="/img/icons/sort.svg" alt="Sort button" /> <span>Sort</span>
       </button>
 
       {isSortOpen && (
-        <ul className={styles.sortList}>
+        <ul className={styles.list}>
           {sortOptions.map((option, index) => {
             return (
               <li
                 key={option}
                 onClick={() => handleSortOptionClick(index)}
-                className={styles.sortItem}
+                className={styles.item}
               >
                 {option}
               </li>

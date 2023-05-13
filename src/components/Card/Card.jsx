@@ -17,10 +17,10 @@ export const Card = ({ name, title, bunOptions, label, price }) => {
 
       {label && <span className={styles.label}>{label.toUpperCase()}</span>}
 
-      <div className={styles.cardContent}>
+      <div className={styles.content}>
         <Heading tag="h3" text={title} />
 
-        <p className={styles.bunType}>
+        <p className={styles.option}>
           {bunOptions.map((option, index) => {
             const isActive = index === activeBunType;
 
@@ -36,11 +36,11 @@ export const Card = ({ name, title, bunOptions, label, price }) => {
           })}
         </p>
 
-        <div className={styles.cardBottom}>
+        <div className={styles.bottom}>
           <p className={styles.price}>${price}</p>
 
-          <button className={styles.cartButton}>
-            Add to cart <span className={styles.addedCount}>3</span>
+          <button className={styles.button}>
+            Add to cart <span className={styles.count}>3</span>
           </button>
         </div>
       </div>
