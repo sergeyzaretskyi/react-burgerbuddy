@@ -10,6 +10,8 @@ h1 {
 
   margin-top: $default-margin;
 
+  overflow: scroll; // ONLY FOR TESTS
+
   .menuCategoriesItem {
     display: flex;
     flex-direction: column;
