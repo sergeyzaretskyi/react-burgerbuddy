@@ -1,0 +1,223 @@
+@import '../../styles/_config.scss';
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $default-gap;
+
+  .empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $button-gap;
+
+    background-color: $color-light-grey;
+    border: 1px solid $color-light-grey;
+    border-radius: $default-border-radius;
+    padding: $button-padding;
+
+    font-size: 1rem;
+    font-weight: 500;
+    color: $color-dark-grey;
+
+    transition: background-color $default-transition;
+
+    &:hover {
+      background-color: $color-white;
+    }
+
+    img {
+      min-width: 24px;
+      min-height: 24px;
+
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.list {
+  max-width: 768px;
+  margin: 0 auto;
+
+  margin-top: $default-margin;
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $cart-gap;
+
+    padding: $cart-padding 0;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px dashed $color-light-grey;
+    }
+
+    .description {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: $cart-gap;
+
+      flex: 1;
+
+      .image {
+        width: 100px;
+        height: 60px;
+
+        min-width: 100px;
+        min-height: 60px;
+
+        object-fit: cover;
+
+        border-radius: $default-border-radius;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .title {
+          font-weight: 500;
+        }
+
+        .option {
+          font-size: 0.9rem;
+          color: $color-dark-grey;
+        }
+      }
+    }
+
+    .counter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: $cart-gap;
+
+      .value {
+        font-weight: 500;
+      }
+
+      .plus,
+      .minus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 24px;
+        height: 24px;
+
+        border: 2px solid $color-red;
+        border-radius: 12px;
+
+        color: $color-red;
+
+        transition: border-color $default-transition, color $default-transition;
+
+        &:hover {
+          border-color: $color-orange;
+          color: $color-orange;
+        }
+      }
+    }
+
+    .total {
+      font-weight: 500;
+    }
+
+    .remove {
+      transition: opacity $default-transition;
+
+      &:hover {
+        opacity: $default-opacity;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.bottom {
+  max-width: 768px;
+  margin: 0 auto;
+
+  margin-top: $default-margin;
+
+  .info,
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $default-gap;
+  }
+
+  .info {
+    .bold {
+      font-weight: 500;
+    }
+
+    .total {
+      .bold {
+        color: $color-red;
+      }
+    }
+  }
+
+  .buttons {
+    justify-content: space-around;
+
+    margin-top: $default-margin;
+
+    .back {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-white;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: $button-gap;
+
+      padding: $button-padding;
+
+      background-color: $color-light-grey;
+      color: $color-dark-grey;
+      border-radius: $default-border-radius;
+
+      transition: opacity $default-opacity;
+
+      &:hover {
+        opacity: $default-opacity;
+      }
+    }
+
+    .order {
+      font-size: 1rem;
+      font-weight: 500;
+      color: $color-white;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: $button-gap;
+
+      padding: $button-padding;
+
+      background-color: $color-red;
+      border-radius: $default-border-radius;
+
+      transition: opacity $default-opacity;
+
+      &:hover {
+        opacity: $default-opacity;
+      }
+    }
+  }
+}
