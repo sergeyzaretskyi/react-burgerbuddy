@@ -9,6 +9,7 @@ $color-black-900: #000000;
 $color-black-700: #2e2827;
 $color-grey: #a9a9a9;
 $color-light-grey: lighten($color-grey, 25%);
+$color-dark-grey: darken($color-grey, 25%);
 
 $default-opacity: 0.7;
 
@@ -22,11 +23,13 @@ $container-padding: 15px;
 $section-padding: 30px;
 $button-padding: 10px 20px;
 $card-padding: 10px;
+$cart-padding: 10px;
 $label-padding: 0 10px;
 
 $default-gap: 35px;
 $button-gap: 10px;
 $card-gap: 10px;
+$cart-gap: 25px;
 
 $default-margin: 30px;
 
