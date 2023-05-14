@@ -8,7 +8,8 @@
         "imageUrl": "/img/burgers/classic-hamburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
-        "price": 8.99
+        "price": 8.99,
+        "rating": 10
       },
       {
         "slug": "bacon-hamburger",
@@ -16,7 +17,8 @@
         "imageUrl": "/img/burgers/bacon-hamburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": "hot",
-        "price": 10.99
+        "price": 10.99,
+        "rating": 8
       },
       {
         "slug": "double-hamburger",
@@ -24,7 +26,8 @@
         "imageUrl": "/img/burgers/double-hamburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
-        "price": 12.99
+        "price": 12.99,
+        "rating": 9
       }
     ],
     "Cheeseburger": [
@@ -34,7 +37,8 @@
         "imageUrl": "/img/burgers/classic-cheeseburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
-        "price": 9.99
+        "price": 9.99,
+        "rating": 10
       },
       {
         "slug": "bacon-cheeseburger",
@@ -42,7 +46,8 @@
         "imageUrl": "/img/burgers/bacon-cheeseburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
-        "price": 11.99
+        "price": 11.99,
+        "rating": 9
       },
       {
         "slug": "double-cheeseburger",
@@ -50,7 +55,8 @@
         "imageUrl": "/img/burgers/double-cheeseburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": "new",
-        "price": 13.99
+        "price": 13.99,
+        "rating": 10
       }
     ],
     "Veggie": [
@@ -60,7 +66,8 @@
         "imageUrl": "/img/burgers/classic-veggie.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
-        "price": 7.99
+        "price": 7.99,
+        "rating": 8
       },
       {
         "slug": "bacon-veggie",
@@ -68,7 +75,8 @@
         "imageUrl": "/img/burgers/bacon-veggie.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
-        "price": 9.99
+        "price": 9.99,
+        "rating": 7
       }
     ],
     "Chicken": [],
