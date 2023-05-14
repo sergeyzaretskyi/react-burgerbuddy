@@ -3,22 +3,25 @@
     "All": [],
     "Hamburger": [
       {
-        "name": "classic-hamburger",
+        "slug": "classic-hamburger",
         "title": "Classic Hamburger",
+        "imageUrl": "/img/burgers/classic-hamburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
         "price": 8.99
       },
       {
-        "name": "bacon-hamburger",
+        "slug": "bacon-hamburger",
         "title": "Bacon Hamburger",
+        "imageUrl": "/img/burgers/bacon-hamburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": "hot",
         "price": 10.99
       },
       {
-        "name": "double-hamburger",
+        "slug": "double-hamburger",
         "title": "Double Hamburger",
+        "imageUrl": "/img/burgers/double-hamburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
         "price": 12.99
@@ -26,22 +29,25 @@
     ],
     "Cheeseburger": [
       {
-        "name": "classic-cheeseburger",
+        "slug": "classic-cheeseburger",
         "title": "Classic Cheeseburger",
+        "imageUrl": "/img/burgers/classic-cheeseburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
         "price": 9.99
       },
       {
-        "name": "bacon-cheeseburger",
+        "slug": "bacon-cheeseburger",
         "title": "Bacon Cheeseburger",
+        "imageUrl": "/img/burgers/bacon-cheeseburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
         "price": 11.99
       },
       {
-        "name": "double-cheeseburger",
+        "slug": "double-cheeseburger",
         "title": "Double Cheeseburger",
+        "imageUrl": "/img/burgers/double-cheeseburger.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": "new",
         "price": 13.99
@@ -49,15 +55,17 @@
     ],
     "Veggie": [
       {
-        "name": "classic-veggie",
+        "slug": "classic-veggie",
         "title": "Classic Veggie Burger",
+        "imageUrl": "/img/burgers/classic-veggie.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
         "price": 7.99
       },
       {
-        "name": "bacon-veggie",
+        "slug": "bacon-veggie",
         "title": "Bacon Veggie Burger",
+        "imageUrl": "/img/burgers/bacon-veggie.jpg",
         "bunOptions": ["Regular", "Bunless"],
         "label": false,
         "price": 9.99
