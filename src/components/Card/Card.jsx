@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { Heading } from '../UI/Heading/Heading';
 import styles from './Card.module.scss';
 
-export const Card = ({ name, title, bunOptions, label, price }) => {
+export const Card = ({ slug, title, imageUrl, bunOptions, label, price }) => {
   const [activeBunType, setActiveBunType] = useState(0);
 
   return (
     <div className={styles.card}>
       <img
-        src={`/img/burgers/${name}.jpg`}
+        src={`${imageUrl}`}
         alt={title}
         title={title}
         width="340"
@@ -26,7 +26,7 @@ export const Card = ({ name, title, bunOptions, label, price }) => {
 
             return (
               <span
-                key={`${name}-${option}`}
+                key={`${slug}-${option}`}
                 onClick={() => setActiveBunType(index)}
                 className={`${isActive ? styles.active : ''}`}
               >
