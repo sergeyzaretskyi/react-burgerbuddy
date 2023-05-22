@@ -15,7 +15,7 @@ export const Burgers = ({
   isDataLoading,
 }) => {
   const renderBurgerCard = (burger) => {
-    return <Card key={burger['name']} {...burger} />;
+    return <Card key={burger['slug']} {...burger} />;
   };
 
   const renderBurgers = () => {
