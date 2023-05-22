@@ -12,7 +12,9 @@ export const Menu = () => {
     const fetchData = async () => {
       try {
         // FOR TESTING ONLY --> await new Promise((resolve) => setTimeout(resolve, 10000));
-        const res = await fetch('/burgers.json');
+        const res = await fetch(
+          'https://restapi-server-with-database.vercel.app/burgerbuddy/api/burgers'
+        );
         const data = await res.json();
 
         setMenuObject(data);
