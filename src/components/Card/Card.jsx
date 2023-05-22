@@ -26,7 +26,7 @@ export const Card = ({ slug, title, imageUrl, bunOptions, label, price }) => {
 
             return (
               <span
-                key={`${slug}`}
+                key={`${slug + index}`}
                 onClick={() => setActiveBunType(index)}
                 className={`${isActive ? styles.active : ''}`}
               >
